@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="Set1_1_Hello_World.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Set1_1_Hello_World"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="MainPage" Margin="10,10,20,20" FontWeight="Normal" FontSize="35" FontFamily="Segoe UI Light"/>
+            <TextBlock HorizontalAlignment="Center" Text="Show Hello World MessageDialog" Margin="20" FontWeight="Bold" FontSize="16"/>
+            <Button Content="Display" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Click" Margin="20"/>
+            <TextBlock HorizontalAlignment="Center" Text="Enter your name" Margin="20" FontSize="16" FontWeight="Bold"/>
+            <TextBox Name="name" HorizontalAlignment="Center" Width="200" Margin="20"/>
+        </StackPanel>
+        <CommandBar VerticalAlignment="Bottom">
+            <AppBarButton Name="Page2" Icon="Next" Label="Page2" Click="Page2_Click"/>
+        </CommandBar>
+    </Grid>
+</Page>

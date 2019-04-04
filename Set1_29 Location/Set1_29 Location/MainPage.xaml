@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Set1_29_Location.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Set1_29_Location"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.TopAppBar>
+        <CommandBar>
+            <AppBarButton Name="Location" Icon="Map" Label="Location" Click="Location_Click"/>
+        </CommandBar>
+    </Page.TopAppBar>
+    <Grid xmlns:map="using:Windows.UI.Xaml.Controls.Maps">
+        <!--워닝을 없애기 위해서 토큰을 설정해 주어야 한다!-->
+        <map:MapControl Name="Display" MapServiceToken="SPsFpcFG32sqquzDdSx7~IibG6XE-die9k7EFFiAohA~Aqkki7TFF17JZJw_ymPM2VGP-Fh1QQ9Mac6d37T_OglviX9etB75CbbI5Kxvt2xt"/>
+    </Grid>
+</Page>
